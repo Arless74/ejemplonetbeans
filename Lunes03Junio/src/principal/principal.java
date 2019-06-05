@@ -257,33 +257,36 @@ public class principal extends javax.swing.JFrame {
         
         int a = Integer.parseInt(num1.getText());
         int b = Integer.parseInt(num2.getText());
-        int d = Integer.parseInt(num3.getText());
+       
         if(sum.isSelected()){
        
             int c = a + b ; 
       
-        
+             num3.setText(Integer.toString(c));
         }
         if(res.isSelected()){
         
-            int c = a - b;
-        
+            int d = a - b;
+           
+            num3.setText(Integer.toString(d));
         }
         if(mul.isSelected()){
         
-            int c = a * b ;
+            int e = a * b ;
             
-        
+           num3.setText(Integer.toString(e));
         }
         if(div.isSelected()){
         
-          int c = a / b;
+          int f = a / b;
             
+          num3.setText(Integer.toString(f));
         }
         if(pot.isSelected()){
         
-        int c = (int) Math.pow(a, b);
+        int g = (int) Math.pow(a, b);
         
+           num3.setText(Integer.toString(g));
         }
         
     }//GEN-LAST:event_resultadoActionPerformed
